@@ -19,8 +19,8 @@ const Home = () => {
           <div className='col-sm-12 col-lg-6'>
             <div className='bg-dark text-white px-4 pt-4 pb-5 rounded'>
               <h1 className='display-1 fw-bolder hello text-white'>Hello</h1>
-              <h5 className='fw-bold opacity-100'>A Bit About Me</h5>
-              <p className='lead opacity-100'>
+              <p className='fw-bold lead mb-2'>A Bit About Me</p>
+              <p className='lh-lg'>
                 I am a self taught sculptor who creates objects for you to fall
                 in love with. You'll know it when you feel it. After having work
                 in art galleries/exhibitions in Florida and Colorado, my work is

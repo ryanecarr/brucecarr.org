@@ -9,7 +9,7 @@ const Nav = () => {
           <span className='fs-2 fw-bold text-white-50 text-uppercase'>
             Bruce Carr
           </span>
-          <div className='fs-2 mx-1 d-inline'>|</div>
+          <div className='fs-1 mx-1 d-inline'>|</div>
           <span className='fs-3'>Sculptor</span>
         </div>
         <button
