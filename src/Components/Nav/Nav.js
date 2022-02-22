@@ -6,12 +6,15 @@ const Nav = () => {
     <nav className='navbar navbar-expand-lg navbar-dark bg-dark text-white px-2 py-3'>
       <div className='container-fluid'>
         <div>
-          <span className='fs-2 fw-bold text-white-50 text-uppercase'>
-            Bruce Carr
-          </span>
-          <div className='fs-1 mx-1 d-inline'>|</div>
-          <span className='fs-3'>Sculptor</span>
+          <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
+            <span className='fs-2 fw-bold text-white-50 text-uppercase'>
+              Bruce Carr
+            </span>
+            <div className='fs-1 mx-1 d-inline'>|</div>
+            <span className='fs-3'>Sculptor</span>
+          </Link>
         </div>
+
         <button
           className='navbar-toggler'
           type='button'
