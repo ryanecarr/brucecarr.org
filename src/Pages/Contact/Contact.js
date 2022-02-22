@@ -31,7 +31,7 @@ const Contact = () => {
       })
       .catch(() => {});
   };
-  
+
   return (
     <div className='container mt-5'>
       <div className='row justify-content-center'>
@@ -56,6 +56,7 @@ const Contact = () => {
                 type='text'
                 class='form-control'
                 id='name'
+                name='name'
                 required
                 onChange={(event) => setName(event.target.value)}
               />
@@ -68,6 +69,7 @@ const Contact = () => {
                 type='email'
                 class='form-control'
                 id='email'
+                name='email'
                 placeholder='name@example.com'
                 required
                 onChange={(event) => setEmail(event.target.value)}
@@ -80,6 +82,7 @@ const Contact = () => {
               <textarea
                 class='form-control'
                 id='message'
+                name='message'
                 rows='5'
                 required
                 onChange={(event) => setMessage(event.target.value)}
