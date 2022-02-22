@@ -13,7 +13,7 @@ const Home = () => {
             <img
               src={profilePhoto}
               alt='Bruce Carr'
-              className='img-fluid mb-3 rounded-circle img-thumbnail'
+              className='img-fluid mb-3 rounded-circle img-thumbnail profile'
             />
           </div>
           <div className='col-sm-12 col-lg-6'>
