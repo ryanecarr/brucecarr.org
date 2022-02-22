@@ -42,7 +42,7 @@ const Contact = () => {
           >
             Your message was sent successfully!
           </div>
-          <form name='brucecarr-contact-form' onSubmit={handleSubmit}>
+          <form name='brucecarr-contact-form' netlify onSubmit={handleSubmit}>
             <input
               type='hidden'
               name='form-name'
