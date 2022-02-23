@@ -1,6 +1,6 @@
 .main {
   max-width: 1000px;
-  min-height: 1000px;
+  min-height: 1300px;
   padding-top: 100px;
 }
 
@@ -36,8 +36,7 @@
 }
 
 .home-about-box {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .App {
@@ -66,23 +65,3 @@
   }
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

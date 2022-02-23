@@ -17,23 +17,40 @@ const Home = () => {
             />
           </div>
           <div className='col-sm-12 col-lg-6'>
-            <div className='bg-dark text-white px-4 pt-4 pb-5 rounded'>
+            <div className='text-white px-4 pt-4 pb-5 rounded home-about-box'>
               <h1 className='display-1 fw-bolder hello text-white'>Hello</h1>
               <p className='fw-bold lead mb-2'>A Bit About Me</p>
               <p className='lh-lg'>
                 I am a self taught sculptor who creates objects for you to fall
-                in love with. You'll know it when you feel it. After having work
-                in art galleries/exhibitions in Florida and Colorado, my work is
-                now exclusively at Mary Leslie Art Studio & Gallery, Salida Co.
+                in love with.
+                <br />
+                <br />I attempt to create a connection and appreciation for
+                Mother Nature's ability to emotionally nourish our souls and
+                with the belief that we are all connected.
+                <br />
+                <br />
+                The materials on their own are insignificant, but when
+                connected, come together to tell a story waiting to be told.
+                <br />
+                <br />
+                After having work in art galleries/exhibitions in Florida and
+                Colorado, my work is now exclusively at Mary Leslie Art Studio &
+                Gallery, Salida Co.
+                <br />
+                <br />
+                Thank you for your interest,
+                <br />
+                <br />
+                We are all connected
               </p>
-              <a
+{/*               <a
                 href='https://marylesliestudio.com/'
                 target='_blank'
                 rel='noreferrer'
                 className='text-white d-block'
               >
                 marylesliestudio.com
-              </a>
+              </a> */}
               <div className='d-flex mt-5 mx-auto'>
                 <Link
                   to='/gallery'

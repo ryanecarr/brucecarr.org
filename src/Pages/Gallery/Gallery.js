@@ -6,6 +6,10 @@ import art04 from '../../images/art04.jpg';
 import art05 from '../../images/art05.jpg';
 import art06 from '../../images/art06.jpg';
 import art07 from '../../images/horse2.jpg';
+import art08 from '../../images/art08.jpg';
+import art09 from '../../images/art09.jpg';
+import art10 from '../../images/art10.jpg';
+import art11 from '../../images/art11.jpg';
 
 const Gallery = () => {
   return (
@@ -18,6 +22,12 @@ const Gallery = () => {
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.3s'
+          />
+          <img
+            src={art09}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.5s'
           />
         </div>
         <div className='col-lg-4 col-md-6 mb-4'>
@@ -39,6 +49,12 @@ const Gallery = () => {
             alt=''
             data-wow-delay='0.2s'
           />
+          <img
+            src={art10}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.2s'
+          />
         </div>
         <div className='col-lg-4 col-md-6 mb-4'>
           <img
@@ -49,6 +65,18 @@ const Gallery = () => {
           />
           <img
             src={art04}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.5s'
+          />
+          <img
+            src={art08}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.2s'
+          />
+          <img
+            src={art11}
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.5s'
