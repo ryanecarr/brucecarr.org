@@ -38,19 +38,20 @@ const Home = () => {
                 Gallery, Salida Co.
                 <br />
                 <br />
+                <a
+                  href='https://marylesliestudio.com/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='text-white d-block'
+                >
+                  marylesliestudio.com
+                </a>
+                <br />
                 Thank you for your interest,
                 <br />
                 <br />
                 We are all connected
               </p>
-{/*               <a
-                href='https://marylesliestudio.com/'
-                target='_blank'
-                rel='noreferrer'
-                className='text-white d-block'
-              >
-                marylesliestudio.com
-              </a> */}
               <div className='d-flex mt-5 mx-auto'>
                 <Link
                   to='/gallery'
