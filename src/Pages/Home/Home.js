@@ -50,7 +50,7 @@ const Home = () => {
                 Thank you for your interest,
                 <br />
                 <br />
-                We are all connected
+                We are all connected,
               </p>
               <div className='d-flex mt-5 mx-auto'>
                 <Link
