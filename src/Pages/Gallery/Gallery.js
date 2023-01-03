@@ -10,12 +10,14 @@ import art08 from '../../images/art08.jpg';
 import art09 from '../../images/art09.jpg';
 import art10 from '../../images/art10.jpg';
 import art11 from '../../images/art11.jpg';
+import art12 from '../../images/newhorse2.jpeg';
 
 const Gallery = () => {
   return (
     <div className='container-fluid mt-3'>
       <div className='row'>
         <div className='col-lg-4 col-md-12 mb-4'>
+          <img src={art12} className='img-fluid mb-4' alt='' />
           <img src={art02} className='img-fluid mb-4' alt='' />
           <img
             src={art01}
