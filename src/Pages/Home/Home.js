@@ -58,7 +58,7 @@ const Home = () => {
                   className='flex-fill mx-2'
                   style={{ textDecoration: 'none', color: 'black' }}
                 >
-                  <button type='button' className='btn btn-green w-100'>
+                  <button type='button' className='btn btn-blue w-100'>
                     My gallery
                   </button>
                 </Link>
@@ -67,7 +67,7 @@ const Home = () => {
                   className='flex-fill mx-2'
                   style={{ textDecoration: 'none', color: 'black' }}
                 >
-                  <button type='button' className='btn btn-green w-100'>
+                  <button type='button' className='btn btn-blue w-100'>
                     Contact me
                   </button>
                 </Link>
