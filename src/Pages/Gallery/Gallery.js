@@ -11,6 +11,9 @@ import art09 from '../../images/art09.jpg';
 import art10 from '../../images/art10.jpg';
 import art11 from '../../images/art11.jpg';
 import art12 from '../../images/newhorse2.jpeg';
+import art13 from '../../images/IMG_20230626_163804.jpg';
+import art14 from '../../images/IMG_20230626_163838.jpg';
+import art15 from '../../images/IMG_20230626_163846.jpg';
 
 const Gallery = () => {
   return (
@@ -30,6 +33,12 @@ const Gallery = () => {
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.5s'
+          />
+          <img
+            src={art14}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.2s'
           />
         </div>
         <div className='col-lg-4 col-md-6 mb-4'>
@@ -53,6 +62,12 @@ const Gallery = () => {
           />
           <img
             src={art10}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.2s'
+          />
+          <img
+            src={art15}
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.2s'
@@ -82,6 +97,12 @@ const Gallery = () => {
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.5s'
+          />
+          <img
+            src={art13}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.2s'
           />
         </div>
       </div>
