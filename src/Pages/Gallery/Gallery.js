@@ -35,12 +35,6 @@ const Gallery = () => {
             alt=''
             data-wow-delay='0.5s'
           />
-          <img
-            src={art14}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
         </div>
         <div className='col-lg-4 col-md-6 mb-4'>
           <img
@@ -63,12 +57,6 @@ const Gallery = () => {
           />
           <img
             src={art10}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-          <img
-            src={art15}
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.2s'
@@ -99,11 +87,31 @@ const Gallery = () => {
             alt=''
             data-wow-delay='0.5s'
           />
+        </div>
+        <div className='col-lg-4 col-md-6 mb-4'>
+          <img
+            src={art14}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.2s'
+          />
+          <img
+            src={art15}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.5s'
+          />
           <img
             src={art13}
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.2s'
+          />
+          <img
+            src={art16}
+            className='img-fluid mb-4'
+            alt=''
+            data-wow-delay='0.5s'
           />
         </div>
       </div>
