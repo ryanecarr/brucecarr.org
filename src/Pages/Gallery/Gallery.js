@@ -20,7 +20,7 @@ const Gallery = () => {
   return (
     <div className='container-fluid mt-3'>
       <div className='row'>
-        <div className='col-lg-4 col-md-12 mb-4'>
+        <div className='col-lg-3 col-md-6 mb-4'>
           <img src={art12} className='img-fluid mb-4' alt='' />
           <img src={art02} className='img-fluid mb-4' alt='' />
           <img
@@ -36,7 +36,7 @@ const Gallery = () => {
             data-wow-delay='0.5s'
           />
         </div>
-        <div className='col-lg-4 col-md-6 mb-4'>
+        <div className='col-lg-3 col-md-6 mb-4'>
           <img
             src={art03}
             className='img-fluid mb-4'
@@ -62,7 +62,7 @@ const Gallery = () => {
             data-wow-delay='0.2s'
           />
         </div>
-        <div className='col-lg-4 col-md-6 mb-4'>
+        <div className='col-lg-3 col-md-6 mb-4'>
           <img
             src={art06}
             className='img-fluid mb-4'
@@ -88,7 +88,7 @@ const Gallery = () => {
             data-wow-delay='0.5s'
           />
         </div>
-        <div className='col-lg-4 col-md-6 mb-4'>
+        <div className='col-lg-3 col-md-6 mb-4'>
           <img
             src={art14}
             className='img-fluid mb-4'
