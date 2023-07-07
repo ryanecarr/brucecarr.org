@@ -14,6 +14,7 @@ import art12 from '../../images/newhorse2.jpeg';
 import art13 from '../../images/IMG_20230626_163804.jpg';
 import art14 from '../../images/IMG_20230626_163838.jpg';
 import art15 from '../../images/IMG_20230626_163846.jpg';
+import art16 from '../../images/IMG_20230703_164958.jpg';
 
 const Gallery = () => {
   return (
