@@ -21,7 +21,7 @@ const Gallery = () => {
     <div className='container-fluid mt-3'>
       <div className='row'>
         <div className='col-lg-3 col-md-6 mb-4'>
-          <img src={art12} className='img-fluid mb-4' alt='' />
+          <img src={art16} className='img-fluid mb-4' alt='' />
           <img src={art02} className='img-fluid mb-4' alt='' />
           <img
             src={art01}
@@ -108,7 +108,7 @@ const Gallery = () => {
             data-wow-delay='0.2s'
           />
           <img
-            src={art16}
+            src={art12}
             className='img-fluid mb-4'
             alt=''
             data-wow-delay='0.5s'
