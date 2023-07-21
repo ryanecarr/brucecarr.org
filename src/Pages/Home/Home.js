@@ -1,7 +1,7 @@
 import React from 'react';
 import { Parallax } from 'react-parallax';
 import { Link } from 'react-router-dom';
-import profilePhoto from '../../images/bruce2.jpg';
+import profilePhoto from '../../images/IMG_20230720_150738.jpg';
 import parallaxPhoto from '../../images/newhorse2.jpeg';
 
 const Home = () => {
