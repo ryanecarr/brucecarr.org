@@ -69,7 +69,7 @@ export default [
     name: 'Shavano',
     status: 'SOLD',
     description: 'Built on site with on site materials',
-    price: 1,
+    price: null,
     image: art07,
     type: 'large',
     category: 'Large Horse',
