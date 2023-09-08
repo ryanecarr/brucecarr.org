@@ -1,23 +1,72 @@
-import React from 'react';
-import art01 from '../../images/art01.jpg';
-import art02 from '../../images/art02.jpg';
-import art03 from '../../images/art03.jpg';
-import art04 from '../../images/art04.jpg';
-import art05 from '../../images/art05.jpg';
-import art06 from '../../images/art06.jpg';
-import art07 from '../../images/horse2.jpg';
-import art08 from '../../images/art08.jpg';
-import art09 from '../../images/art09.jpg';
-import art10 from '../../images/art10.jpg';
-import art11 from '../../images/art11.jpg';
-import art12 from '../../images/newhorse2.jpeg';
-import art13 from '../../images/IMG_20230626_163804.jpg';
-import art14 from '../../images/IMG_20230626_163838.jpg';
-import art15 from '../../images/IMG_20230626_163846.jpg';
-import art16 from '../../images/IMG_20230703_164958.jpg';
+import React, { useState } from 'react';
+import gallery from '../../Pages/Gallery/GalleryData';
+import Art from '../../Components/Art';
 
 const Gallery = () => {
+  const [artGallery, setArtGallery] = useState(gallery);
+  const [displaying, setDisplaying] = useState('Entire Gallery');
+
+  const filterGallery = (event) => {
+    let filtered;
+    const { selectedIndex, value } = event.target;
+    const displaying = event.target[selectedIndex].getAttribute('displaying');
+
+    if (selectedIndex === 0) {
+      filtered = gallery;
+    } else {
+      filtered = gallery.filter((el) => el.type === value);
+    }
+    setArtGallery(filtered);
+    setDisplaying(displaying);
+  };
+
   return (
+    <div className='container px-4 py-4'>
+      <div className='row justify-content-left mb-4'>
+        <div className='col col-md-3 col-lg-3'>
+          <div className='form-group'>
+            <label for='formControlSelect' className='mb-2'>Filter by category</label>
+            <select
+              className='form-control'
+              id='formControlSelect'
+              onChange={filterGallery}
+            >
+              <option displaying='Entire Gallery' value='all'>
+                All
+              </option>
+              <option displaying='Large Horses' value='large'>
+                Large Horses
+              </option>
+              <option displaying='Small Horses' value='small'>
+                Small Horses
+              </option>
+              <option displaying='Architectural Sculptures' value='sculpture'>
+                Architectural Sculptures
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div className='row'>
+        <div className='col'>
+          <h3>{displaying}</h3>
+        </div>
+      </div>
+      <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
+        {artGallery.map((a) => (
+          <Art
+            key={a.name}
+            name={a.name}
+            status={a.status}
+            desc={a.description}
+            price={a.price}
+            image={a.image}
+            category={a.category}
+          />
+        ))}
+      </div>
+    </div>
+    /*
     <div className='container-fluid mt-3'>
       <div className='row'>
         <div className='col-lg-3 col-md-6 mb-4'>
@@ -116,6 +165,7 @@ const Gallery = () => {
         </div>
       </div>
     </div>
+    */
   );
 };
 
