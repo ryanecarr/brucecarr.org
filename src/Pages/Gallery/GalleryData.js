@@ -50,7 +50,7 @@ export default [
   {
     name: 'Garden Horse',
     status: 'SOLD',
-    description: 'Built on site',
+    description: 'Built on site with on site materials',
     price: null,
     image: art16,
     type: 'large',
@@ -66,9 +66,9 @@ export default [
     category: 'Large Horse',
   },
   {
-    name: 'Large Horse - need name',
-    status: 'need status',
-    description: 'need description',
+    name: 'Shavano',
+    status: 'SOLD',
+    description: 'Built on site with on site materials',
     price: 1,
     image: art07,
     type: 'large',
