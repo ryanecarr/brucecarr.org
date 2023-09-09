@@ -2,7 +2,6 @@
 import art01 from '../../images/art01.jpg';
 import art02 from '../../images/art02.jpg';
 import art03 from '../../images/art03.jpg';
-import art04 from '../../images/art04.jpg';
 import art06 from '../../images/art06.jpg';
 import art07 from '../../images/horse2.jpg';
 import art08 from '../../images/art08.jpg';
@@ -10,9 +9,6 @@ import art09 from '../../images/art09.jpg';
 import art10 from '../../images/art10.jpg';
 import art11 from '../../images/art11.jpg';
 import art12 from '../../images/newhorse2.jpeg';
-/* import art13 from '../../images/IMG_20230626_163804.jpg';
-import art14 from '../../images/IMG_20230626_163838.jpg';
-import art15 from '../../images/IMG_20230626_163846.jpg'; */
 import art16 from '../../images/IMG_20230703_164958.jpg';
 import art17 from '../../images/IMG_9089.jpg';
 import art18 from '../../images/IMG_9001.png';
