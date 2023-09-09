@@ -94,15 +94,6 @@ export default [
     category: 'Small Horse',
   },
   {
-    name: 'Small Horse 3 - need name',
-    status: 'need status',
-    description: 'need description',
-    price: 1,
-    image: art04,
-    type: 'small',
-    category: 'Small Horse',
-  },
-  {
     name: 'Small Horse 4 - need name',
     status: 'need status',
     description: 'need description',

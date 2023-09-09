@@ -21,7 +21,7 @@ const Home = () => {
               <h1 className='display-1 fw-bolder hello text-white'>Hello</h1>
               <p className='fw-bold lead mb-2'>A Bit About Me</p>
               <p className='lh-lg'>
-                I am a self taught sculptor who creates objects for you to fall
+                I am a sculptor who creates objects for you to fall
                 in love with.
                 <br />
                 <br />I attempt to create a connection and appreciation for

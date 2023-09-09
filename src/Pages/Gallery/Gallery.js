@@ -27,7 +27,7 @@ const Gallery = () => {
           <div className='form-group'>
             <label for='formControlSelect' className='mb-2'>Filter by category</label>
             <select
-              className='form-control'
+              className='form-select'
               id='formControlSelect'
               onChange={filterGallery}
             >
