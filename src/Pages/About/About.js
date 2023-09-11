@@ -4,8 +4,8 @@ import profilePhoto from '../../images/b1.jpg';
 
 const About = () => {
   return (
-    <div className='container main'>
-      <div className='row p-3'>
+    <div className='container mt-4'>
+      <div className='row'>
         <div className='col-sm-12 col-lg-4 text-center'>
           <img
             src={profilePhoto}

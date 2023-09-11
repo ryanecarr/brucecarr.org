@@ -21,8 +21,8 @@ const Gallery = () => {
   };
 
   return (
-    <div className='container py-3'>
-      <div className='row justify-content-left mb-4'>
+    <div className='container mt-4'>
+      <div className='row justify-content-center mb-4'>
         <div className='col col-md-3 col-lg-3'>
           <div className='form-group'>
             <label htmlFor='formControlSelect' className='mb-2'>

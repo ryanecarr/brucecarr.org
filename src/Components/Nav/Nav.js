@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Nav = () => {
   const location = useLocation();
   return (
-    <div className='pt-2 pb-3'>
+    <div className='py-3'>
       <div className='container'>
         <div className='d-flex justify-content-center pb-3'>
           <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>

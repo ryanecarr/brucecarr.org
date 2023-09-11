@@ -1,14 +1,10 @@
-.main {
-  padding-top: 50px;
-}
-
 .bg-image {
   background-image: url('images/IMG_9101_A.jpg');
   position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-background-position: 50% 25%;
+  background-position: 50% 25%;
   height: 100vh;
 }
 
@@ -49,16 +45,16 @@ background-position: 50% 25%;
 }
 
 @media (max-width: 991px) {
-  .main {
-    padding-top: 0px;
-    max-width: 500px;
+  .home-about-box {
+    margin-top: 25px;
   }
 }
 
-@media (max-width: 991px) {
-.home-about-box {
-  margin-top: 25px;
-}
+@media (max-width: 640px) {
+    .bg-image {
+        background-position: 60% 10%;
+        transform: scale(0.95);
+      }
 }
 
 @media (prefers-reduced-motion: no-preference) {
