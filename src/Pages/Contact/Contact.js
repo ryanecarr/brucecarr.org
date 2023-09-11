@@ -37,7 +37,7 @@ const Contact = () => {
       <div className='row justify-content-center'>
         <div className='col-12 col-md-8 col-lg-6 col-xl-4'>
           <div
-            class={`alert alert-success ${success ? 'd-block' : 'd-none'}`}
+            className={`alert alert-success ${success ? 'd-block' : 'd-none'}`}
             role='alert'
           >
             Your message was sent successfully!
@@ -48,26 +48,26 @@ const Contact = () => {
               name='form-name'
               value='brucecarr-contact-form'
             />
-            <div class='mb-3'>
-              <label for='name' class='form-label'>
+            <div className='mb-3'>
+              <label htmlFor='name' className='form-label'>
                 *Name
               </label>
               <input
                 type='text'
-                class='form-control'
+                className='form-control'
                 id='name'
                 name='name'
                 required
                 onChange={(event) => setName(event.target.value)}
               />
             </div>
-            <div class='mb-3'>
-              <label for='email' class='form-label'>
+            <div className='mb-3'>
+              <label for='email' className='form-label'>
                 *Email Address
               </label>
               <input
                 type='email'
-                class='form-control'
+                className='form-control'
                 id='email'
                 name='email'
                 placeholder='name@example.com'
@@ -75,12 +75,12 @@ const Contact = () => {
                 onChange={(event) => setEmail(event.target.value)}
               />
             </div>
-            <div class='mb-3'>
-              <label for='message' class='form-label'>
+            <div className='mb-3'>
+              <label for='message' className='form-label'>
                 *Message
               </label>
               <textarea
-                class='form-control'
+                className='form-control'
                 id='message'
                 name='message'
                 rows='5'
@@ -89,7 +89,7 @@ const Contact = () => {
               ></textarea>
             </div>
             <div>
-              <button className='w-100 btn btn-blue btn-lg mt-3' type='submit'>
+              <button className='w-100 btn btn-dark btn-lg mt-3' type='submit'>
                 Send
               </button>
             </div>

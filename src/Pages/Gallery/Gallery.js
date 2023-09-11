@@ -21,7 +21,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className='container px-4 py-4'>
+    <div className='container py-3'>
       <div className='row justify-content-left mb-4'>
         <div className='col col-md-3 col-lg-3'>
           <div className='form-group'>
