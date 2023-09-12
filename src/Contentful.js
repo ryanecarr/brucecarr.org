@@ -1,6 +1,6 @@
 const client = require('contentful').createClient({
-  space: process.env.prod.CONTENTFUL_SPACE_ID,
-  accessToken: process.env.prod.CONTENTFUL_DELIVERY_TOKEN,
+  space: process.env.CONTENTFUL_SPACE_ID,
+  accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
 });
 
 const getSculptures = () =>
