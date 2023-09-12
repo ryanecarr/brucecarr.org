@@ -21,7 +21,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className='container mt-4'>
+    <div className='container mt-5'>
       <div className='row justify-content-center mb-4'>
         <div className='col col-md-3 col-lg-3'>
           <div className='form-group'>
@@ -51,7 +51,7 @@ const Gallery = () => {
       </div>
       <div className='row'>
         <div className='col'>
-          <h3>{displaying}</h3>
+          <div className='display-6'>{displaying}</div>
         </div>
       </div>
       <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>

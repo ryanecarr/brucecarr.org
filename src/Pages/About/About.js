@@ -4,7 +4,7 @@ import profilePhoto from '../../images/b1.jpg';
 
 const About = () => {
   return (
-    <div className='container mt-4'>
+    <div className='container mt-5'>
       <div className='row'>
         <div className='col-sm-12 col-lg-4 text-center'>
           <img
@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className='col-sm-12 col-lg-8'>
           <div className='pb-5 home-about-box'>
-            <p className='fw-bold lead mb-2'>A Bit About Me</p>
+            <p className='display-6'>A Bit About Me</p>
             <p class='lh-base'>
               I am a sculptor who creates objects for you to fall in love with.
             </p>

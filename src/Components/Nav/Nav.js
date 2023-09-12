@@ -7,12 +7,14 @@ const Nav = () => {
   return (
     <div className='py-3'>
       <div className='container'>
-        <div className='d-flex justify-content-center pb-3'>
-          <Link to='/' style={{ textDecoration: 'none', color: 'black' }}>
-            <span className='fs-2 fw-bold text-uppercase'>Bruce Carr</span>
+        <div className='d-flex flex-column justify-content-center align-items-center pb-3'>
+          {/* <Link to='/' style={{ textDecoration: 'none', color: 'black' }}> */}
+          <h1 className='display-5 mb-0'>Bruce Carr</h1>
+          <p class='fw-lighter fs-4 mb-4'>- Sculptor -</p>
+          {/*             <span className='fs-2 fw-bold text-uppercase'>Bruce Carr</span>
             <div className='fs-1 mx-1 d-inline'>|</div>
-            <span className='fs-3'>Sculptor</span>
-          </Link>
+            <span className='fs-3'>Sculptor</span> */}
+          {/*    </Link> */}
         </div>
         <div className='d-flex justify-content-center align-items-center'>
           <Link
@@ -24,7 +26,7 @@ const Nav = () => {
           >
             home
           </Link>
-          <div className='mx-2 d-inline'>|</div>
+          <div class='vr'></div>
           <Link
             to='/about'
             style={{ textDecoration: 'none', color: 'black' }}
@@ -34,7 +36,7 @@ const Nav = () => {
           >
             about
           </Link>
-          <div className='mx-2 d-inline'>|</div>
+          <div class='vr'></div>
           <Link
             to='/gallery'
             style={{ textDecoration: 'none', color: 'black' }}
@@ -44,7 +46,7 @@ const Nav = () => {
           >
             gallery
           </Link>
-          <div className='mx-2 d-inline'>|</div>
+          <div class='vr'></div>
           <Link
             to='/contact'
             style={{ textDecoration: 'none', color: 'black' }}
