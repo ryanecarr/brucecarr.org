@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import gallery from '../../Pages/Gallery/GalleryData';
 import Art from '../../Components/Art';
+import useSculptures from '../../Hooks/useSculptures';
 
 const Gallery = () => {
+  const [sculptures, isLoading] = useSculptures();
   const [artGallery, setArtGallery] = useState(gallery);
   const [displaying, setDisplaying] = useState('Entire Gallery');
 
@@ -19,6 +21,12 @@ const Gallery = () => {
     setArtGallery(filtered);
     setDisplaying(displaying);
   };
+
+  useEffect(() => {
+    console.log(sculptures);
+  }, [sculptures]);
+
+  if (isLoading) return <p>Loading...</p>;
 
   return (
     <div className='container mt-5'>

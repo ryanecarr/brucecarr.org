@@ -5,6 +5,7 @@ const Contact = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState(false);
+  const [failure, setFailure] = useState(false);
 
   const encode = (data) => {
     return Object.keys(data)
@@ -29,7 +30,14 @@ const Contact = () => {
       .then(() => {
         setSuccess(true);
       })
-      .catch(() => {});
+      .catch(() => {
+        setFailure(true);
+      })
+      .finally(() => {
+        setName('');
+        setEmail('');
+        setMessage('');
+      });
   };
 
   return (
@@ -41,6 +49,12 @@ const Contact = () => {
             role='alert'
           >
             Your message was sent successfully!
+          </div>
+          <div
+            className={`alert alert-danger ${failure ? 'd-block' : 'd-none'}`}
+            role='alert'
+          >
+            An error occurred sending your message, please try again.
           </div>
           <form name='brucecarr-contact-form' onSubmit={handleSubmit}>
             <input
