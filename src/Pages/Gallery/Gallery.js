@@ -23,7 +23,7 @@ const Gallery = () => {
   };
 
   useEffect(() => {
-    console.log(sculptures);
+    console.log(sculptures.fields);
   }, [sculptures]);
 
   if (isLoading) return <p>Loading...</p>;
