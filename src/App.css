@@ -4,8 +4,8 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 25%;
-  height: 100vh;
+  background-position: 50% 8%;
+  height: 1200px;
 }
 
 .btn-circle {
@@ -48,13 +48,16 @@
   .home-about-box {
     margin-top: 25px;
   }
+  .bg-image {
+    height: 100vh;
+  }
 }
 
 @media (max-width: 640px) {
     .bg-image {
         background-position: 60% 10%;
         transform: scale(0.95);
-      }
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {

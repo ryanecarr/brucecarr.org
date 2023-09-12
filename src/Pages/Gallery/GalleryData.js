@@ -19,6 +19,18 @@ import art22 from '../../images/IMG_9193.jpg';
 import art23 from '../../images/IMG_9187.jpg';
 import art24 from '../../images/IMG_8838.jpg';
 
+const types = {
+  sm: 'small',
+  lg: 'large',
+  arch: 'architectural',
+};
+
+const categories = {
+  lg: 'Large Horse',
+  sm: 'Small Horse',
+  arch: 'Architectural Sculpture',
+};
+
 export default [
   // large horses
   {
@@ -28,8 +40,8 @@ export default [
     description: 'Built on site with on site materials',
     price: null,
     image: art17,
-    type: 'large',
-    category: 'Large Horse',
+    type: types.lg,
+    category: categories.lg,
     notes: null,
   },
   {
@@ -39,8 +51,8 @@ export default [
     description: 'Badger Creek Ranch',
     price: null,
     image: art18,
-    type: 'large',
-    category: 'Large Horse',
+    type: types.lg,
+    category: categories.lg,
     notes: null,
   },
   {
@@ -50,8 +62,8 @@ export default [
     description: 'Local private Salida ranch',
     price: null,
     image: art12,
-    type: 'large',
-    category: 'Large Horse',
+    type: types.lg,
+    category: categories.lg,
     notes: null,
   },
   {
@@ -61,8 +73,8 @@ export default [
     description: 'Built on site with on site materials',
     price: null,
     image: art16,
-    type: 'large',
-    category: 'Large Horse',
+    type: types.lg,
+    category: categories.lg,
     notes: null,
   },
   {
@@ -72,8 +84,8 @@ export default [
     description: 'Completed August 2023',
     price: 7500,
     image: art19,
-    type: 'large',
-    category: 'Large Horse',
+    type: types.lg,
+    category: categories.lg,
     notes: 'Delivery and installation no additional cost',
   },
   {
@@ -83,8 +95,8 @@ export default [
     description: 'Built on site with on site materials',
     price: null,
     image: art07,
-    type: 'large',
-    category: 'Large Horse',
+    type: types.lg,
+    category: categories.lg,
     notes: null,
   },
   // small horses
@@ -95,8 +107,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art01,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
   {
@@ -106,8 +118,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art03,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
   {
@@ -117,8 +129,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art06,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
   {
@@ -128,8 +140,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art10,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
   {
@@ -139,8 +151,8 @@ export default [
     description: 'Reclaimed',
     price: 1000,
     image: art11,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
   {
@@ -150,8 +162,8 @@ export default [
     description: '11x14',
     price: 1000,
     image: art21,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
   {
@@ -161,11 +173,11 @@ export default [
     description: 'Reclaimed',
     price: 1000,
     image: art23,
-    type: 'small',
-    category: 'Small Horse',
+    type: types.sm,
+    category: categories.sm,
     notes: null,
   },
-  // sculptures
+  // architectural sculptures
   {
     uuid: '61719c04-6db1-431d-9861-2d272a5c3aa6',
     name: 'Native Winds',
@@ -173,8 +185,8 @@ export default [
     description: 'Reclaimed',
     price: 1450,
     image: art20,
-    type: 'sculpture',
-    category: 'Architectural Sculpture',
+    type: types.arch,
+    category: categories.arch,
     notes: null,
   },
   {
@@ -184,8 +196,8 @@ export default [
     description: 'Reclaimed',
     price: 625,
     image: art22,
-    type: 'sculpture',
-    category: 'Architectural Sculpture',
+    type: types.arch,
+    category: categories.arch,
     notes: null,
   },
   {
@@ -195,8 +207,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art02,
-    type: 'sculpture',
-    category: 'Architectural Sculpture',
+    type: types.arch,
+    category: categories.arch,
     notes: null,
   },
   {
@@ -206,8 +218,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art08,
-    type: 'sculpture',
-    category: 'Architectural Sculpture',
+    type: types.arch,
+    category: categories.arch,
     notes: null,
   },
   {
@@ -217,8 +229,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art09,
-    type: 'sculpture',
-    category: 'Architectural Sculpture',
+    type: types.arch,
+    category: categories.arch,
     notes: null,
   },
   {
@@ -228,8 +240,8 @@ export default [
     description: 'need description',
     price: 1,
     image: art24,
-    type: 'sculpture',
-    category: 'Architectural Sculpture',
+    type: types.arch,
+    category: categories.arch,
     notes: null,
   },
 ];

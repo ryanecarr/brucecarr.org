@@ -42,7 +42,10 @@ const Gallery = () => {
               <option displaying='Small Horses' value='small'>
                 Small Horses
               </option>
-              <option displaying='Architectural Sculptures' value='sculpture'>
+              <option
+                displaying='Architectural Sculptures'
+                value='architectural'
+              >
                 Architectural Sculptures
               </option>
             </select>
