@@ -192,7 +192,7 @@ export default [
     uuid: '9db682b2-f945-484e-a187-a39729a5d144',
     name: 'Turquoise Wave',
     sold: false,
-    description: 'Arizona rock base and clavos nails, ',
+    description: 'Arizona rock base and clavos nails',
     price: 625,
     image: art22,
     type: types.arch,

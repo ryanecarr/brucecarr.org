@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, /* useEffect */ } from 'react';
 import gallery from '../../Pages/Gallery/GalleryData';
 import Art from '../../Components/Art';
-import useSculptures from '../../Hooks/useSculptures';
+// import useSculptures from '../../Hooks/useSculptures';
 
 const Gallery = () => {
-  const [sculptures, isLoading] = useSculptures();
+  // const [sculptures, isLoading] = useSculptures();
   const [artGallery, setArtGallery] = useState(gallery);
   const [displaying, setDisplaying] = useState('Entire Gallery');
 
@@ -22,11 +22,11 @@ const Gallery = () => {
     setDisplaying(displaying);
   };
 
-  useEffect(() => {
+/*   useEffect(() => {
     console.log(sculptures);
-  }, [sculptures]);
+  }, [sculptures]); */
 
-  if (isLoading) return <div className='d-flex justify-content-center mx-5 my-5 display-6'>Loading...</div>;
+  // if (isLoading) return <div className='d-flex justify-content-center mx-5 my-5 display-6'>Loading...</div>;
 
   return (
     <div className='container mt-5'>
