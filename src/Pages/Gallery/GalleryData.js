@@ -17,7 +17,6 @@ import art20 from '../../images/IMG_9181.jpg';
 import art21 from '../../images/IMG_9185.jpg';
 import art22 from '../../images/IMG_9193.jpg';
 import art23 from '../../images/IMG_9187.jpg';
-import art24 from '../../images/IMG_8838.jpg';
 
 const types = {
   sm: 'small',
