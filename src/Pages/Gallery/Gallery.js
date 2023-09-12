@@ -23,10 +23,10 @@ const Gallery = () => {
   };
 
   useEffect(() => {
-    console.log(sculptures.fields);
+    console.log(sculptures);
   }, [sculptures]);
 
-  if (isLoading) return <p>Loading...</p>;
+  if (isLoading) return <div className='d-flex justify-content-center mx-5 my-5 display-6'>Loading...</div>;
 
   return (
     <div className='container mt-5'>
