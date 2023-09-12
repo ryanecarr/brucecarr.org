@@ -68,6 +68,19 @@ const Gallery = () => {
           />
         ))}
       </div>
+      <div className='row'>
+        <div className='col'>
+          <div className='d-flex justify-content-center'>
+            <button
+              type='button'
+              className='btn btn-link'
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              back to top
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
