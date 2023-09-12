@@ -17,6 +17,7 @@ import art20 from '../../images/IMG_9181.jpg';
 import art21 from '../../images/IMG_9185.jpg';
 import art22 from '../../images/IMG_9193.jpg';
 import art23 from '../../images/IMG_9187.jpg';
+import comingSoon from '../../images/comingsoon.png';
 
 const types = {
   sm: 'small',
@@ -82,7 +83,7 @@ export default [
     sold: false,
     description: 'Coming September 2023',
     price: 7500,
-    image: null,
+    image: comingSoon,
     type: types.lg,
     category: categories.lg,
     notes: 'Delivery and installation no additional cost',
@@ -232,7 +233,7 @@ export default [
     category: categories.arch,
     notes: null,
   },
-/*   {
+  /*   {
     uuid: 'd31dfb03-8cd8-4532-8051-ba159d8cf4ff',
     name: 'The Gift',
     sold: false,
@@ -247,7 +248,8 @@ export default [
     uuid: 'd31dfb03-8cd8-4532-8051-ba159d8cf4ff',
     name: 'The Gift and Presenting',
     sold: false,
-    description: 'The Gift is on the left, Presenting is on the right. The Gift is $1,000 and Presenting is $1,250',
+    description:
+      'The Gift is on the left, Presenting is on the right. The Gift is $1,000 and Presenting is $1,250',
     price: null,
     image: art19,
     type: types.arch,
