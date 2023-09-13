@@ -70,7 +70,7 @@ export default [
     uuid: 'e15b18bd-9023-4dad-bcfc-669613bfac33',
     name: 'Garden Horse',
     sold: true,
-    description: 'Built on site with on site materials',
+    description: 'Built on site',
     price: null,
     image: art16,
     type: types.lg,
