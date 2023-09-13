@@ -1,7 +1,11 @@
-.main {
-  max-width: 1000px;
-  min-height: 1300px;
-  padding-top: 100px;
+.bg-image {
+  background-image: url('images/IMG_9101_A.jpg');
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 8%;
+  height: 1200px;
 }
 
 .btn-circle {
@@ -35,26 +39,25 @@
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.9);
 }
 
-.home-about-box {
-  background: rgba(0, 0, 0, 0.8);
-}
 
 .App {
   text-align: center;
 }
 
-@media (max-width: 992px) {
-  .main {
-    padding-top: 0px;
-    max-width: 500px;
+@media (max-width: 991px) {
+  .home-about-box {
+    margin-top: 25px;
   }
-
+  .bg-image {
+    height: 100vh;
+  }
 }
 
-@media (max-width: 768px) {
-  .profile {
-    width: 250px;
-  }
+@media (max-width: 640px) {
+    .bg-image {
+        background-position: 60% 10%;
+        transform: scale(0.95);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {

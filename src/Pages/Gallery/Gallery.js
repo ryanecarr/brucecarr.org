@@ -1,118 +1,95 @@
-import React from 'react';
-import art01 from '../../images/art01.jpg';
-import art02 from '../../images/art02.jpg';
-import art03 from '../../images/art03.jpg';
-import art04 from '../../images/art04.jpg';
-import art05 from '../../images/art05.jpg';
-import art06 from '../../images/art06.jpg';
-import art07 from '../../images/horse2.jpg';
-import art08 from '../../images/art08.jpg';
-import art09 from '../../images/art09.jpg';
-import art10 from '../../images/art10.jpg';
-import art11 from '../../images/art11.jpg';
-import art12 from '../../images/newhorse2.jpeg';
-import art13 from '../../images/IMG_20230626_163804.jpg';
-import art14 from '../../images/IMG_20230626_163838.jpg';
-import art15 from '../../images/IMG_20230626_163846.jpg';
-import art16 from '../../images/IMG_20230703_164958.jpg';
+import React, { useState, /* useEffect */ } from 'react';
+import gallery from '../../Pages/Gallery/GalleryData';
+import Art from '../../Components/Art';
+// import useSculptures from '../../Hooks/useSculptures';
 
 const Gallery = () => {
+  // const [sculptures, isLoading] = useSculptures();
+  const [artGallery, setArtGallery] = useState(gallery);
+  const [displaying, setDisplaying] = useState('Entire Gallery');
+
+  const filterGallery = (event) => {
+    let filtered;
+    const { selectedIndex, value } = event.target;
+    const displaying = event.target[selectedIndex].getAttribute('displaying');
+
+    if (selectedIndex === 0) {
+      filtered = gallery;
+    } else {
+      filtered = gallery.filter((el) => el.type === value);
+    }
+    setArtGallery(filtered);
+    setDisplaying(displaying);
+  };
+
+/*   useEffect(() => {
+    console.log(sculptures);
+  }, [sculptures]); */
+
+  // if (isLoading) return <div className='d-flex justify-content-center mx-5 my-5 display-6'>Loading...</div>;
+
   return (
-    <div className='container-fluid mt-3'>
+    <div className='container mt-5'>
+      <div className='row justify-content-center mb-4'>
+        <div className='col col-md-3 col-lg-3'>
+          <div className='form-group'>
+            <label htmlFor='formControlSelect' className='mb-2'>
+              Filter by category
+            </label>
+            <select
+              className='form-select'
+              id='formControlSelect'
+              onChange={filterGallery}
+            >
+              <option displaying='Entire Gallery' value='all'>
+                All
+              </option>
+              <option displaying='Large Horses' value='large'>
+                Large Horses
+              </option>
+              <option displaying='Small Horses' value='small'>
+                Small Horses
+              </option>
+              <option
+                displaying='Architectural Sculptures'
+                value='architectural'
+              >
+                Architectural Sculptures
+              </option>
+            </select>
+          </div>
+        </div>
+      </div>
       <div className='row'>
-        <div className='col-lg-3 col-md-6 mb-4'>
-          <img src={art16} className='img-fluid mb-4' alt='' />
-          <img src={art02} className='img-fluid mb-4' alt='' />
-          <img
-            src={art01}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.3s'
-          />
-          <img
-            src={art09}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.5s'
-          />
+        <div className='col'>
+          <div className='display-6'>{displaying}</div>
         </div>
-        <div className='col-lg-3 col-md-6 mb-4'>
-          <img
-            src={art03}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.1s'
+      </div>
+      <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
+        {artGallery.map((a) => (
+          <Art
+            key={a.uuid}
+            name={a.name}
+            sold={a.sold}
+            desc={a.description}
+            price={a.price}
+            image={a.image}
+            category={a.category}
+            notes={a.notes}
           />
-          <img
-            src={art05}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.4s'
-          />
-          <img
-            src={art07}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-          <img
-            src={art10}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-        </div>
-        <div className='col-lg-3 col-md-6 mb-4'>
-          <img
-            src={art06}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-          <img
-            src={art04}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.5s'
-          />
-          <img
-            src={art08}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-          <img
-            src={art11}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.5s'
-          />
-        </div>
-        <div className='col-lg-3 col-md-6 mb-4'>
-          <img
-            src={art14}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-          <img
-            src={art15}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.5s'
-          />
-          <img
-            src={art13}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.2s'
-          />
-          <img
-            src={art12}
-            className='img-fluid mb-4'
-            alt=''
-            data-wow-delay='0.5s'
-          />
+        ))}
+      </div>
+      <div className='row'>
+        <div className='col'>
+          <div className='d-flex justify-content-center'>
+            <button
+              type='button'
+              className='btn btn-link'
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
+              back to top
+            </button>
+          </div>
         </div>
       </div>
     </div>
