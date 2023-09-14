@@ -71,20 +71,6 @@ const Gallery = () => {
           <div className='display-6'>{displaying}</div>
         </div>
       </div>
-      {/*       <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
-        {artGallery.map((a) => (
-          <Art
-            key={a.uuid}
-            name={a.name}
-            sold={a.sold}
-            desc={a.description}
-            price={a.price}
-            image={a.image}
-            category={a.category}
-            notes={a.notes}
-          />
-        ))}
-      </div> */}
       <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
         {artGallery.map((sculpture) => (
           <Art

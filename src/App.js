@@ -6,8 +6,8 @@ import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Gallery from './Pages/Gallery';
 import Contact from './Pages/Contact';
-import About from './Pages/About/About';
-import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import About from './Pages/About';
+import ScrollToTop from './Components/ScrollToTop';
 
 const App = () => {
   return (

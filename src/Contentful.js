@@ -9,6 +9,8 @@ const getSculptures = () =>
     .then((response) => response.items);
 
 const getAbout = () =>
-  client.getEntry('30uRTYwhsKtAi9hi14C2KT').then((response) => response);
+  client
+    .getEntry(`${process.env.REACT_APP_CONTENTFUL_ABOUT_PAGE_ID}`)
+    .then((response) => response);
 
 export { getSculptures, getAbout };
