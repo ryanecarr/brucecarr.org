@@ -71,6 +71,7 @@ const Contact = () => {
                 className='form-control'
                 id='name'
                 name='name'
+                value={name}
                 required
                 onChange={(event) => setName(event.target.value)}
               />
@@ -84,6 +85,7 @@ const Contact = () => {
                 className='form-control'
                 id='email'
                 name='email'
+                value={email}
                 placeholder='name@example.com'
                 required
                 onChange={(event) => setEmail(event.target.value)}
@@ -99,6 +101,7 @@ const Contact = () => {
                 name='message'
                 rows='5'
                 required
+                value={message}
                 onChange={(event) => setMessage(event.target.value)}
               ></textarea>
             </div>
