@@ -10,7 +10,7 @@ const Nav = () => {
         <div className='d-flex flex-column justify-content-center align-items-center pb-3'>
           {/* <Link to='/' style={{ textDecoration: 'none', color: 'black' }}> */}
           <h1 className='display-5 mb-0'>Bruce Carr</h1>
-          <p class='fw-lighter fs-4 mb-4'>- Sculptor -</p>
+          <p className='fw-lighter fs-4 mb-4'>- Sculptor -</p>
           {/*             <span className='fs-2 fw-bold text-uppercase'>Bruce Carr</span>
             <div className='fs-1 mx-1 d-inline'>|</div>
             <span className='fs-3'>Sculptor</span> */}
@@ -26,7 +26,7 @@ const Nav = () => {
           >
             home
           </Link>
-          <div class='vr'></div>
+          <div className='vr'></div>
           <Link
             to='/about'
             style={{ textDecoration: 'none', color: 'black' }}
@@ -36,7 +36,7 @@ const Nav = () => {
           >
             about
           </Link>
-          <div class='vr'></div>
+          <div className='vr'></div>
           <Link
             to='/gallery'
             style={{ textDecoration: 'none', color: 'black' }}
@@ -46,7 +46,7 @@ const Nav = () => {
           >
             gallery
           </Link>
-          <div class='vr'></div>
+          <div className='vr'></div>
           <Link
             to='/contact'
             style={{ textDecoration: 'none', color: 'black' }}

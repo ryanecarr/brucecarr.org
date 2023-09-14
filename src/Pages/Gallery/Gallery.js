@@ -1,11 +1,10 @@
-import React, { useState, /* useEffect */ } from 'react';
-import gallery from '../../Pages/Gallery/GalleryData';
+import React, { useState, useEffect } from 'react';
 import Art from '../../Components/Art';
-// import useSculptures from '../../Hooks/useSculptures';
+import useSculptures from '../../Hooks/useSculptures';
 
 const Gallery = () => {
-  // const [sculptures, isLoading] = useSculptures();
-  const [artGallery, setArtGallery] = useState(gallery);
+  const [sculptures, isLoading] = useSculptures();
+  const [artGallery, setArtGallery] = useState([]);
   const [displaying, setDisplaying] = useState('Entire Gallery');
 
   const filterGallery = (event) => {
@@ -14,19 +13,26 @@ const Gallery = () => {
     const displaying = event.target[selectedIndex].getAttribute('displaying');
 
     if (selectedIndex === 0) {
-      filtered = gallery;
+      filtered = sculptures;
     } else {
-      filtered = gallery.filter((el) => el.type === value);
+      filtered = sculptures.filter((el) => el.fields.type === value);
     }
     setArtGallery(filtered);
     setDisplaying(displaying);
   };
 
-/*   useEffect(() => {
-    console.log(sculptures);
-  }, [sculptures]); */
+  useEffect(() => {
+    setArtGallery(sculptures);
+  }, [sculptures]);
 
-  // if (isLoading) return <div className='d-flex justify-content-center mx-5 my-5 display-6'>Loading...</div>;
+  if (isLoading)
+    return (
+      <div className='d-flex justify-content-center mx-5 my-5'>
+        <div className='spinner-border text-dark' role='status'>
+          <span className='visually-hidden'>Loading...</span>
+        </div>
+      </div>
+    );
 
   return (
     <div className='container mt-5'>
@@ -65,7 +71,7 @@ const Gallery = () => {
           <div className='display-6'>{displaying}</div>
         </div>
       </div>
-      <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
+      {/*       <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
         {artGallery.map((a) => (
           <Art
             key={a.uuid}
@@ -76,6 +82,20 @@ const Gallery = () => {
             image={a.image}
             category={a.category}
             notes={a.notes}
+          />
+        ))}
+      </div> */}
+      <div className='row g-4 py-3 row-cols-1 row-cols-md-2 row-cols-lg-3'>
+        {artGallery.map((sculpture) => (
+          <Art
+            key={sculpture.fields.title}
+            title={sculpture.fields.title}
+            sold={sculpture.fields.sold}
+            description={sculpture.fields.description}
+            price={sculpture.fields.price}
+            image={sculpture.fields.image.fields.file.url}
+            category={sculpture.fields.category}
+            notes={sculpture.fields.notes}
           />
         ))}
       </div>

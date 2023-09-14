@@ -1,38 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import profilePhoto from '../../images/b1.jpg';
+import useAbout from '../../Hooks/useAbout';
 
 const About = () => {
+  const [about, isLoading] = useAbout();
+
+  if (isLoading)
+    return (
+      <div className='d-flex justify-content-center mx-5 my-5'>
+        <div className='spinner-border text-dark' role='status'>
+          <span className='visually-hidden'>Loading...</span>
+        </div>
+      </div>
+    );
+
   return (
     <div className='container mt-5'>
       <div className='row'>
         <div className='col-sm-12 col-lg-4 text-center'>
           <img
-            src={profilePhoto}
-            alt='Bruce Carr'
+            src={about.fields.image.fields.image.fields.file.url}
+            alt={about.fields.image.fields.image.fields.title}
             className='img-fluid mb-2 img-thumbnail profile shadow-sm'
           />
         </div>
         <div className='col-sm-12 col-lg-8'>
           <div className='pb-5 home-about-box'>
-            <p className='display-6'>A Bit About Me</p>
-            <p class='lh-base'>
-              I am a sculptor who creates objects for you to fall in love with.
-            </p>
-            <p class='lh-base'>
-              I attempt to create a connection and appreciation for Mother
-              Nature's ability to emotionally nourish our souls and with the
-              belief that we are all connected.
-            </p>
-            <p class='lh-base'>
-              The materials on their own are insignificant, but when connected,
-              come together to tell a story waiting to be told.
-            </p>
-            <p class='lh-base'>
-              After having work in art galleries/exhibitions in Florida and
-              Colorado, my work is now exclusively at Mary Leslie Art Studio &
-              Gallery, Salida Co.
-            </p>
+            <p className='display-6'>{about.fields.headline}</p>
+            <p className='lh-base'>{about.fields.copy}</p>
             <p className='lh-base'>
               <a
                 href='https://marylesliestudio.com/'
