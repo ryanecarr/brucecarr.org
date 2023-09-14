@@ -10,7 +10,10 @@ export default function useSculptures() {
 
   useEffect(() => {
     promise.then((sculptures) => {
-      setSculptures(sculptures);
+      const sorted = sculptures.sort((a, b) => {
+        return a.fields.displayOrder - b.fields.displayOrder;
+      });
+      setSculptures(sorted);
       setLoading(false);
     });
   }, []);

@@ -1,9 +1,14 @@
 const client = require('contentful').createClient({
-  space: 'htrytgjtzwgv',
-  accessToken: 'CdGL45BfQDm1u7IihdMRxXi9AQIJRs6N80U8Fc5tYVk',
+  space: `${process.env.REACT_APP_CONTENTFUL_SPACE_ID}`,
+  accessToken: `${process.env.REACT_APP_CONTENTFUL_DELIVERY_TOKEN}`,
 });
 
 const getSculptures = () =>
-  client.getEntries().then((response) => response.items);
+  client
+    .getEntries({ content_type: 'sculpture' })
+    .then((response) => response.items);
 
-export { getSculptures };
+const getAbout = () =>
+  client.getEntry('30uRTYwhsKtAi9hi14C2KT').then((response) => response);
+
+export { getSculptures, getAbout };
