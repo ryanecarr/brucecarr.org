@@ -50,12 +50,12 @@ const Gallery = () => {
           <div className='col col-md-3 col-lg-3'>
             <div className='form-group'>
               <form>
-                <label htmlFor='formControlSelect' className='mb-2'>
+                <label htmlFor='filterArt' className='mb-2'>
                   Filter by category
                 </label>
                 <select
                   className='form-select'
-                  id='formControlSelect'
+                  id='filterArt'
                   onChange={filterGallery}
                 >
                   <option displaying='Entire Gallery' value='all'>
